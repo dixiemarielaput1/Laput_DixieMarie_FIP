@@ -1,0 +1,1203 @@
+/*FIP MIDTERM - Dixie Laput*/
+
+ #mobile-outline {
+   outline: 20px solid #333;
+   max-width: 412px;
+   margin: 20px auto 20px auto;
+   border-radius: 10px;
+}
+
+body {
+   color: black;
+   font-family: 'Dubai','Sanchez', 'Times New Roman', serif;
+}
+
+a {
+   text-decoration: none;
+   transition: all .5s ease-in-out;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+.cr-red {
+   color: #9a2018;
+}
+
+
+
+/* 2. ---Main Nav--- */
+
+#main-nav button {
+    width: 20px;
+    height: 20px;
+    background: url('../images/menu.png') no-repeat center;
+    background-size: contain; 
+    margin-top: 20px; 
+    transition: all 0.5s ease;
+    margin-bottom: 20px;
+    border: 0;
+}
+#main-nav button.expanded {
+   transform: rotate(90deg);
+}
+
+#burger-con {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: none;
+}
+
+#burger-con.slide-toggle {
+   display: block;
+}
+
+#main-nav ul li a:hover {
+   color: #9a2018;
+}
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#main-nav ul li a {
+   display: block;
+   padding: 10px 0 10px 0;
+   text-align: center;
+   color: black;
+   font-size: 25px;
+   font-family: 'Deluce';
+}
+
+#main-nav ul li {
+   border-bottom: 1px solid #efefef;
+}
+
+
+
+
+
+
+#main-nav ul li:first-child {
+   border-top: 1px solid #efefef;
+}
+
+#main-nav ul li:last-child {
+   margin-bottom: 10px;
+}
+
+#logo {
+   margin-bottom: 20px;
+   max-width: 280px;
+}
+
+#book-now-header {
+   display: none;
+}
+
+.book-now {
+   background-color: #f6d626;
+   color: black;
+   font-size: 29px;
+   font-style: italic;
+   display: flex;
+   align-items: center;
+   transition: all 0.3s ease-in-out;
+   font-family: 'Deluce';
+}
+
+.book-now:hover {
+   background-color:white;
+}
+
+/* 3. ---Main Hero Image--- */
+
+
+
+#hero img {
+   grid-column: 1/-1;
+   grid-row: 1/1;
+   justify-self: center;
+}
+
+#hero-main {
+   height: 2500px; 
+   object-fit: cover;
+   width: 100%;
+}
+
+
+#history img{
+   grid-column: 1/-1;
+   grid-row: 1/1;
+   justify-self: center;
+}
+
+#hero .grid-con {
+   grid-column: 2/3;
+   grid-row:1/1;
+   margin: 0;
+}
+
+.book-now {
+   background-color:#f6d626;
+   border: 1.5px solid black;
+   color: black;
+   font-size: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-style: italic;
+
+   margin: 30px 30px;
+   transition: all 0.3s ease;
+}
+
+.book-now:hover {
+   background-color: white;
+}
+
+
+.hero-img-h2, .hero-img-h3 {
+   background-color: #fff;
+   padding: 10px 15px;
+   font-size: 14px;
+}
+
+.hero-img-h2 span, .hero-img-h3 span {
+   color: #9a2018;
+   font-size: 12px;
+}
+
+
+#hero-heading-box {
+   align-self: end;
+}
+
+.line-separator {
+   margin-top: 20px;
+   border-top: solid 2px black;
+   padding-top: 20px;
+}
+
+
+.show-hide {
+   display: none;
+}
+
+/* 8. ---Footer--- */
+
+#footer-hero {
+   background-color: black;
+	background-repeat: no-repeat;
+   color: #f6d626;
+   font-size: 16px;
+   margin-top: 40px;
+   text-align: center;
+   padding-bottom: 40px;
+}
+
+#footer-hero h3 {
+   margin-top: 30px;
+   font-size: 28px;
+   margin-bottom: 16px;
+}
+
+#footer-privacy .line-separator {
+   margin-top: 0px;
+}
+
+#footer-contact-info h3 {
+   font-size: 23px;
+}
+
+#footer-contact-info p {
+   margin-bottom: 20px;
+   line-height: 18px;
+   font-size: 11px;
+}
+
+/* ---Tablet Library Grid Styles--- */
+@media screen and (min-width: 768px) {
+
+
+   .video-container {
+      text-align: center;
+      width: 800px;
+      margin-top:80px;
+      margin-left: 80px;  
+   
+   }
+   
+   .beer-content .buttonA{
+
+
+      background-color: #f6d626;
+      padding: 15px 20px;
+      color: black;
+
+   }
+
+   .beer-content p{
+      margin-bottom: 20px;
+   }
+ #product-details{
+   width: 550px;
+   margin-bottom: 2px;
+ }
+
+ #product-details h2{
+   font-family: 'Deluce';
+   font-size: 44px;
+   margin-top: 60px;
+   width: 550px;
+   text-align: center;
+
+ }
+
+
+   #contact-details{
+      margin-top: 50px;
+      
+   
+    }
+    .contact-section {
+      font-family: 'Dubai';
+      margin-left: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      height: 500px;
+      width:700px;
+      margin-top: 40px;
+      background-color: #f6d626; 
+      padding: 40px 40px;
+      margin-bottom: 20px;
+    
+      border: 1px solid #f6d626;
+      border-radius: 15px;  
+    }
+   
+   
+   
+    .grid-container {
+   
+      display: grid;
+      padding: 10px 10px;
+      gap: 15px;
+      width: 600px;
+      margin: 20px 20px;
+   }
+   
+   .contact-section button{
+      padding: 20px 20px;  
+      margin-bottom: 50px;
+   }
+   .grid-container textarea, input {
+       width: 100%;
+       padding: 5px; 
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       box-sizing: border-box;
+       margin-top: 1px;
+   }
+   
+   .contact-section h3{
+      margin-top: 60px;
+      
+   }
+
+   .contact-section button{
+      font-size: 18px;
+      background-color: white;
+      border: 1px solid #ccc;
+      
+   }
+
+   #galleryDetails p {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 70px;
+      margin-bottom: 80px;
+      text-align: center;
+   
+      font-family: 'Deluce';
+      font-size: 30px;
+      
+      border-left: 40px solid black; 
+      border-right: 40px solid black; 
+      line-height: 0.1; 
+      
+   }
+
+   
+   #beerDetails p {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 70px;
+      margin-bottom: 5px;
+      text-align: center;
+   
+      font-family: 'Deluce';
+      font-size: 30px;
+      
+      border-left: 40px solid black; 
+      border-right: 40px solid black; 
+      line-height: 0.1; 
+      
+   }
+
+   #storyDetails p{
+      margin-bottom: 40px;
+   }
+
+
+   #flavors {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      padding: 5px;
+      margin-top: 90px;
+      font-family: 'Deluce';
+      font-size: 25px;
+  }
+  
+  .grid-item {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .col-span-2 {
+      grid-column: span 2;
+  }
+  
+  .m-col-span-1 {
+      grid-column: span 1;
+  }
+  
+  .circle {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      padding:  20px 40px;
+      overflow: hidden;
+      background-color:#f6d626;
+
+      text-align: center; 
+
+  }
+  
+  .circle img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+
+  
+   
+   #hero-summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   #beer-original {
+    
+      margin-left: -100px; 
+      margin-right: 0; 
+      transform: rotate(-15deg); 
+    }
+#beer-original img {
+
+   width: 400px; 
+   height: 400px; 
+   margin-left:1px;
+   margin-right: 10px;
+   display: block;
+   
+
+
+ }
+
+   #beer-original {
+      margin-right: 0; 
+      margin-left: -200px; 
+   }
+
+   .beer-content {
+
+      display: block;
+      height: 200px;
+      width: 450px;
+      color: #fff;
+      margin-top: 150px;
+      margin-left:80px;
+      margin-right: 150px;
+      padding: 30px 100px 20px 10px;
+   }
+
+ 
+   .beer-content h2, .beer-content p {
+      margin-bottom: 29px; 
+   }
+   #beer-original {
+      width: 650px;
+      height: 500px; 
+      margin-right: 0; 
+      margin-left: -100px; 
+      transform: rotate(-15deg); 
+   }
+
+   /*added*/
+
+
+
+
+
+
+
+
+
+   #sticky-nav-con {
+      position: sticky;
+      top: 0px;
+      background-color: #f6d626;
+      border-bottom: solid 1px #c3c3c3;
+      z-index: 1;
+   }
+
+   #main-nav {
+      margin-top: 4%;
+      margin-bottom: 4%;
+  
+      padding-left: 30px;
+   }
+
+   #main-nav ul li a {
+      display: inline;
+   }
+
+   #button {
+      display: none;
+      font-size: 35px;
+   }
+
+   #burger-con {
+      display: block;
+      font-size: 12px;
+   }
+
+   #burger-con ul li, #burger-con ul li:first-child {
+      border: none;
+      display: inline;
+   }
+
+   #burger-con ul li {
+      margin-right: 10px;
+   }
+
+   #burger-con ul li:last-child {
+      margin-right: 0px;
+   }
+
+   #logo {
+      margin-top: 32px;
+      margin-left:20%;
+      order: -1;
+      width: 70%;
+   }
+
+   #book-now-header {
+      display: flex;
+
+      margin-left:-20px;
+   }
+
+   /* hero-main */
+
+   #book-now-hero {
+      display: none;
+      margin-right:30%;
+
+   }
+
+   #hero-main {
+      height: 600px;
+      object-position: 30%;
+      width: 100%;
+      
+   }
+
+   #beer-original {
+      display: block;
+      height: 200px;
+
+      color: #fff;
+      margin-top: 50px;
+      padding: 30px 10px 20px 10px;
+   }
+
+   #beer-original h3 {
+      font-size: 12px;
+      margin-bottom: 10px;
+   }
+
+
+   .hero-img-h2, .hero-img-h3 {
+      padding: 30px 15px;
+      font-size: 18px;
+   }
+
+   .hero-img span, .hero-img-h3 span {
+      font-size: 14px;
+   }
+
+   /* main-hero-image */
+
+   .fas {
+      font-size: 60px;
+   }
+
+ 
+   .show-hide {
+      display: block;
+   }
+
+
+   #about-hero {
+      height: 240px;
+   }
+
+   #about-us-text {
+      column-count: 2;
+   }
+
+   #about-us-text-column1 {
+      margin-bottom: 80px;
+   }
+
+   #faq-text-con  {
+      column-count: 2;
+      text-align: left;
+   }
+
+}
+
+
+
+
+/* ---Desktop Library Grid Styles--- */
+@media screen and (min-width: 1200px) {
+   .video-container {
+      text-align: center;
+      width: 1200px;
+margin: 1px 90px;
+padding-left: 300px;
+   
+   }
+   
+   
+
+
+   .buttonA{
+      background-color: #f6d626;
+      padding: 15px 20px;
+      color: black;
+
+   }
+
+   #galleryDetails p{
+      margin-bottom:1px;
+   }
+   #product-details{
+      width: 900px;
+      margin-bottom: 2px;
+    }
+   
+    #product-details h2{
+      font-family: 'Deluce';
+      font-size: 44px;
+      margin-top: 60px;
+      width: 900px;
+      text-align: center;
+   
+    }
+   
+
+   #contact-details{
+      margin-top: 50px;
+      
+   
+    }
+    .contact-section {
+      font-family: 'Dubai';
+      margin-left: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      height: 500px;
+      width:700px;
+      margin-top: 40px;
+      background-color: #f6d626; 
+      padding: 40px 40px;
+      margin-bottom: 20px;
+    
+      border: 1px solid #f6d626;
+      border-radius: 15px;  
+    }
+   
+   
+   
+    .grid-container {
+   
+      display: grid;
+      padding: 10px 10px;
+      gap: 15px;
+      width: 600px;
+      margin: 20px 20px;
+   }
+   
+   .contact-section button{
+      padding: 20px 20px;  
+      margin-bottom: 50px;
+   }
+   .grid-container textarea, input {
+       width: 100%;
+       padding: 5px; 
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       box-sizing: border-box;
+       margin-top: 1px;
+   }
+   
+   .contact-section h3{
+      margin-top: 60px;
+      
+   }
+
+   .contact-section button{
+      font-size: 18px;
+      background-color: white;
+      border: 1px solid #ccc;
+      
+   }
+
+   .Beer-Images {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-gap: 50px;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 100px;
+    }
+
+    .Beer-Images  img{
+height: 500px;
+width:600px;
+    }
+  
+
+  
+
+    
+
+
+
+
+
+  #storyDetails{
+   font-size: 14px;
+   line-height: 22px;
+   margin-top: 70px;
+   margin-bottom:1px;
+   text-align: center;
+
+   font-family: 'Dubai';
+   font-size: 30px;
+   
+  }
+
+  #storyDetails h2{
+   margin-top: 40px;
+   margin-bottom: 40px;
+   font-size: 70px;
+  }
+
+  
+  #storyDetails p{
+
+   margin-top: 40px;
+   margin-bottom: 10px;
+   font-size: 20px;
+  }
+
+   #history {
+      padding: 50px 0; 
+      text-align: center; 
+  }
+
+   #history-main{
+      height: 750px; 
+      object-fit:cover;
+      object-position:center 90%;
+      width: 100%;
+      filter: brightness(35%);
+      margin-top: 10px;
+   
+
+   }
+   
+   #history-main img{
+      filter: blur(0.1px);
+   }
+
+
+
+
+   #beerDetails p {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 70px;
+      margin-bottom: 1px;
+      text-align: center;
+   
+      font-family: 'Deluce';
+      font-size: 30px;
+      
+      border-left: 40px solid black; 
+      border-right: 40px solid black;
+      line-height: 0.1; 
+      
+   }
+
+
+   #flavors {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      padding: 5px;
+      margin-top: 90px;
+      font-family: 'Deluce';
+      font-size: 25px;
+  }
+  
+  .grid-item {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .col-span-2 {
+      grid-column: span 2;
+  }
+  
+  .m-col-span-1 {
+      grid-column: span 1;
+  }
+  
+  .circle {
+      width: 290px;
+      height: 290px;
+      border-radius: 50%;
+      padding: 60px;
+      overflow: hidden;
+      background-color:#f6d626;
+
+      text-align: center; 
+ 
+
+  }
+  
+  .circle img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+
+  
+   
+   #hero-summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+  }
+  
+
+
+/*added*/
+
+#beer-original {
+   display: none;
+   width: 650px; 
+   height: 500px; 
+   margin-right: 350px;
+   display: block;
+   transform: rotate(-15deg);
+
+   
+}
+#beer-original img {
+
+   width: 3400px; 
+   height: 500px; 
+   margin: 0 auto;
+   display: block;
+ 
+ }
+
+   #beer-original {
+
+      margin-right: 0; 
+      margin-left: -200px; 
+   }
+
+   .beer-content {
+      display: block;
+      height: 200px;
+      width: 450px;
+      color: #fff;
+      margin-top: 200px;
+      margin-left:150px;
+      padding: 30px 10px 20px 10px;
+      margin-right: 80px;
+   }
+
+
+ 
+   .beer-content h2, .beer-content p {
+      margin-bottom: 29px; 
+   }
+
+   #beer-original {
+      width: 650px; 
+      height: 500px; 
+      margin-right: 0; 
+      margin-left: -100px; 
+      transform: rotate(-15deg); 
+   }
+/*added*/
+
+
+
+#book-now-header{
+   margin-left: 10px;
+}
+   #main-header {
+      height: 110px;
+   }
+
+   #main-nav {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      margin-left: 25px;
+   }
+
+   #burger-con {
+      font-size: 16px;
+      margin-top: 28px;
+   }
+
+   #burger-con ul li {
+      margin-right: 25px;
+   }
+
+   .book-now {
+      font-size: 18px;
+
+   }
+
+   /* hero-main */
+
+ 
+
+   #check-availability {
+      margin-top: 10px;
+   }
+
+   .hero-img-h2, .hero-img-h3 {
+      font-size: 24px;
+   }
+
+   .hero-img-h2 span, .hero-img-h3 span {
+      font-size: 16px;
+   }
+
+   #hero-main {
+      object-position: 15%;
+   }
+
+   /* main-hero-image */
+
+
+ 
+
+
+
+
+   #about-hero {
+      height: 380px;
+   }
+
+
+}
+@media screen and (max-width: 768px) {
+
+
+   .video-container video{
+      height:500px;
+      width: 500px;
+   
+    }
+ 
+   .beer-content .buttonA{
+
+
+      background-color: #f6d626;
+      padding: 5px 5px;
+      color: black;
+
+   }
+
+   .beer-content p{
+      margin-bottom: 20px;
+   }
+   
+ #product-details{
+   width: 400px;
+   margin-bottom: 2px;
+ }
+
+ #product-details h2{
+   font-family: 'Deluce';
+   font-size: 44px;
+   margin-top: 60px;
+   width: 420px;
+   text-align: center;
+
+ }
+
+
+   #contact-details{
+      margin-top: 50px;
+      width: 400px;
+      margin-left:10px;
+      
+   
+    }
+    .contact-section {
+      font-family: 'Dubai';
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+      height: 500px;
+      width:400px;
+      margin-top: 20px;
+      background-color: #f6d626; 
+      padding: 40px 40px;
+      margin-bottom: 20px;
+      margin-left:20px;
+      border: 1px solid #f6d626;
+      border-radius: 15px;  
+    }
+   
+   
+   
+    .grid-container {
+   
+      display: grid;
+      padding: 10px 10px;
+      gap: 15px;
+      width: 400px;
+      margin: 20px 20px;
+   }
+   
+   .contact-section button{
+      padding: 20px 20px;  
+      margin-bottom: 50px;
+   }
+   .grid-container textarea, input {
+       width: 100%;
+       padding: 5px; 
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       box-sizing: border-box;
+       margin-top: 1px;
+   }
+   
+   .contact-section h3{
+      margin-top: 60px;
+      
+   }
+
+   .contact-section button{
+      font-size: 18px;
+      background-color: white;
+      border: 1px solid #ccc;
+      
+   }
+
+   
+   #galleryDetails p {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 60px;
+      margin-bottom: 5px;
+      text-align: center;
+   
+      font-family: 'Deluce';
+      font-size: 30px;
+      
+      border-left: 40px solid black; 
+      border-right: 40px solid black; 
+      line-height: 0.1; 
+      
+   }
+
+  
+.Beer-Images{
+   margin-top: 50px;
+}
+
+   #storyDetails h2{
+      padding: 20px 170px;
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 1px;
+      margin-bottom:1px;
+      text-align: center;
+      font-family: 'Dubai';
+      font-size: 30px;
+      
+     }
+
+     #storyDetails p{
+   text-align: center;
+   margin-bottom: 20px;
+     }
+
+
+  .circle {
+   margin-top: 20px;
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   padding:  20px 40px;
+   overflow: hidden;
+   background-color:#f6d626;
+
+   text-align: center; 
+
+
+}
+
+.circle img {
+   display: block;
+   width: 100%;
+   height: auto;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+   #beerDetails p {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 40px;
+      margin-bottom: 1px;
+      text-align: center;
+   
+      font-family: 'Deluce';
+      font-size: 28px;
+      margin-bottom:20px;
+      
+      border-left: 40px solid black; 
+      border-right: 40px solid black; 
+      line-height: 0.1; 
+      
+   }
+
+
+
+
+
+   #main-header{
+      background-color: #f6d626;
+   }
+ 
+   #beer-original {
+      margin-top: 90px;
+
+      display: none;
+      width: 150px; 
+     
+      margin-right: 50px;
+      display: block;
+      transform: rotate(-15deg);
+      font-size: 2px;
+   
+   }   
+
+   .beer-content {
+      display: block;
+      height: 200px;
+      width: 200px;
+      color: #fff;
+
+  
+      padding: 30px 10px 20px 10px;
+      
+   }
+
+ 
+   #hero-main {
+      
+      height: 450px; 
+      object-position: center;
+
+     padding: 10px; 
+   }
+ 
+   .hero-img-h2, .hero-img-h3 {
+     font-size: 14px; 
+     line-height: 1.2;
+     padding: 8px; 
+     margin: 0; 
+ 
+   .hero-img-h2 span, .hero-img-h3 span {
+     font-size: 12px; 
+   }
+ 
+}
+ }
+
+
+
