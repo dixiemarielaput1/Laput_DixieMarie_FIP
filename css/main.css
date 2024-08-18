@@ -1,0 +1,2624 @@
+   /* 
+      CSS Guide 
+
+      1.  General Styles
+      2.  Main Nav
+      3.  Main Hero Image
+      4.  Main Hero Image Contact
+      5.  Why Couples Resort
+      6.  About & FAQ
+      7.  Contact Form
+      8.  Footer
+      9.  Custom Queries
+      10. Tablet Queries
+      11. Desktop Queries 
+   */
+
+
+   /* 1. ---General Styles--- */
+
+   body {
+      color:black;
+      background-color: white;
+      font-family: 'Northead', 'Times New Roman', serif;
+   }  
+
+   a {
+      text-decoration: none;
+      transition: all .5s ease-in-out;
+   }
+
+   input, textarea {
+      display: block;
+      margin: 0;
+      padding: 0;
+   }
+
+   .cr-red {
+      color: #9a2018;
+   }
+
+
+
+   /*prod page*/
+
+   .products-Beer {
+     text-align: center;
+     margin-top: 50px;
+     margin-bottom: 70px;
+   }
+
+   .product-1 img:hover{
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+   }
+
+   
+   .product-2 img:hover{
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+   }
+
+   
+   .product-3 img:hover{
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+   }
+
+
+
+
+   /*ANIMATION SECTION*/
+
+
+@keyframes slideIn-toRight {
+   from {
+      transform: translateX(-500px);
+    }
+    to {
+      transform: translateX(0px);
+    }
+  }
+
+@keyframes fadeIn {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+  }
+
+@keyframes slideIn-toLeft {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+  }
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes beatingCookie {
+0%{
+      transform: scale(0.8) rotate(10deg); 
+      opacity: 0.5;
+  }
+  40% {
+      transform: scale(1.1) rotate(-10deg); 
+      opacity: 1;
+  }
+  60% {
+      transform: scale(1.3) rotate(10deg); 
+  }
+  80% {
+      transform: scale(1.4) rotate(-10deg); 
+  }
+  100% {
+      transform: scale(1.5) rotate(0deg); 
+      opacity: 1;
+  }
+  }
+
+  .animate-left-to-right{
+   animation: slideIn-toRight 0.5s ease-in-out 1, fadeIn 1s ease-in-out 1 ;
+ }
+
+ /*
+ .animate-right-to-left{
+  /* animation: slideIn-toLeft 1s ease-in-out 1, fadeIn 1s ease-in-out 1 running;
+  animation: beatingCookie 0.8s ease-out, fadeIn 0.5s ease-in-out;
+ }
+ */
+
+ .animate-beating-cookie{
+   animation: beatingCookie 0.8s ease-out, fadeIn 0.1s ease-in-out;
+  }
+
+ .animate-right-to-left-delay{
+   animation:   fadeIn 1s ease-in-out 1 forwards;
+ }
+
+
+
+
+
+ #contact-details{
+   margin-top: 50px;
+   
+
+ }
+ .contact-section {
+   font-family: 'Northead';
+   margin-left: 360px;
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   justify-content: center;
+   height: 500px;
+   width:700px;
+   margin-top: 40px;
+   font-size:20px;
+   padding: 20px 40px;
+   margin-bottom: 20px;
+ 
+   border: 1px solid #f6d626;
+   border-radius: 15px;  
+ }
+
+
+
+ .grid-container {
+
+   display: grid;
+   padding: 10px 10px;
+   gap: 15px;
+   width: 600px;
+   margin: 20px 20px;
+}
+
+.contact-section button{
+   padding: 20px 20px;  
+   margin-bottom: 50px;
+}
+.grid-container textarea, input {
+    width: 100%;
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 1px;
+}
+
+.contact-section h3{
+   margin-top: 60px;
+   
+}
+
+
+
+
+
+
+   /* 2. ---Main Nav--- */
+
+   #book-now-header{
+      text-align: center;
+      justify-content: center;
+      margin: 31px 15px;
+   }
+   #book-now-header p{
+     font-size: 19px;
+     margin-top:10px;
+      margin-bottom:10px;
+   }
+   #main-nav button {
+      width: 20px;
+      height: 20px;
+      background: url(../images/burger.svg) no-repeat center;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      transition: all .5s ease;
+      border: 0;
+    
+
+   }
+
+   #main-nav{
+      font-family: 'Northead';
+   
+      
+   }
+
+   #main-nav button.expanded {
+      transform: rotate(90deg);
+   }
+
+   #burger-con {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: none;
+   }
+
+   #burger-con.slide-toggle {
+      display: block;
+   }
+
+   #main-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+   }
+
+   #main-nav ul li a {
+      display: block;
+      padding: 10px 35px 10px 35px;
+      text-align: center;
+      color: black;
+      font-size: 30px;
+   }
+
+
+   #main-nav ul li {
+      border-bottom: 1px solid #efefef;
+   }
+
+   #main-nav ul li:first-child {
+      border-top: 1px solid #efefef;
+   }
+
+   #main-nav ul li:last-child {
+      margin-bottom: 10px;
+   }
+
+   #main-nav ul li a:hover{
+      color:#FFD800;
+      text-decoration: underline;
+   }
+
+   #book-now-header {
+      display: none;
+   }
+
+   #logo {
+      max-height: 30px;
+      max-width: 88px;
+      margin-bottom: 20px;
+   }
+
+   /* 3. ---Main Hero Image--- */
+   #booking-calendar {
+      display: block;
+      height: 200px;
+
+      color: #fff;
+      margin-top: 50px;
+      padding: 30px 10px 20px 10px;
+   }
+
+
+
+
+
+
+   #hero img {
+      grid-column: 1/-1;
+      grid-row: 1/1;
+      justify-self: center;
+   
+   }
+
+   #hero-main {
+      height: 220px;
+      object-fit: cover;
+   }
+
+   #hero .grid-con {
+      grid-column: 2/3;
+      grid-row:1/1;
+      margin: 0;
+
+
+   }
+
+   .book-now {
+
+      color: black;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-style: italic;
+      transition: all 0.3s ease;
+   }
+
+   .book-now img{
+      width:50px;
+      height:50px;
+   }
+
+ 
+
+   .hero-img-h2, .hero-img-h3 {
+      background-color: #fff;
+      padding: 10px 15px;
+      font-size: 14px;
+   }
+
+   .hero-img-h2 span, .hero-img-h3 span {
+      color: #9a2018;
+      font-size: 12px;
+   }
+
+   #booking-calendar {
+      display: none;
+   }
+
+   #hero-heading-box {
+      align-self: end;
+   }
+
+   .line-seperator {
+      margin-top: 20px;
+      border-top: solid 3px #CF6666;
+      padding-top: 20px;
+   }
+
+   #hero-summary p {
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 20px;
+   }
+
+   /* 4. ---Main Hero Image Contact--- */
+
+
+
+   .fas {
+      font-size: 50px;
+      color: #9a2018;
+      float: left;
+
+   }
+
+   .fa-mobile-alt {
+      margin-right: 20px;
+      margin-left: 3px;
+      margin-bottom: 20px;
+   }
+
+   .fa-map-marker-alt {
+      margin-right: 15px;
+   }
+
+   #contact {
+      font-size: 12px;
+      background-color: #efefef;
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+
+   #contact .grid-con > div {
+      width: 240px;
+      margin: 0 auto;
+   }
+
+   #why-choose-us-nav {
+      padding-top: 20px;
+   }
+
+   #why-choose-us-nav ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+   }
+
+   #why-choose-us-nav ul li {
+      margin-bottom: 15px;
+   }
+
+   #why-choose-us-nav ul li a {
+      color:#9a2018;
+      padding: 5px;
+   }
+
+   #why-choose-us-nav ul li a.selected {
+      border-left: #9a2018 solid 5px;
+   }
+
+   #why-choose-us-hero-con img {
+
+      grid-column: 1/-1;
+      grid-row: 1/1;
+      justify-self: center;
+   }
+
+   #why-choose-us-hero {
+      height: 195px;
+      object-fit: cover;
+      object-position: 30%;
+   }
+
+   #why-choose-us-hero-con .grid-con {
+ 
+      grid-column: 2/3;
+
+      grid-row: 1/1;
+
+      margin: 0;
+   }
+
+   #why-choose-us-heading-box {
+      align-self: end;
+   }
+
+   .why-choose-us-image {
+      float: left;
+      margin-right: 20px;
+      margin-top: 30px;
+   }
+
+   .why-choose-us-image span{
+      display: none;
+   }
+
+
+   .why-choose-us-image-con h2 {
+      font-size: 14px;
+      margin-bottom: 20px;
+      margin-top: 30px;
+   }
+
+   .why-choose-us-image-con p {
+      font-size: 12px;
+      margin-bottom: 20px;
+      line-height: 20px;
+   }
+
+   .why-choose-us-image-con a {
+      color: #707070;
+      font-size: 12px;
+   }
+
+   .show-hide {
+      display: none;
+   }
+
+   #why-choose-us-bottom-nav {
+      background-color: #CF6666;
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+   }
+
+   #why-choose-us-bottom-nav ol {
+      list-style-type: none;
+      margin: 0 0 0 20px;
+      padding: 0;
+   }
+
+   #why-choose-us-bottom-nav ol li {
+      display: inline;
+   }
+
+   #why-choose-us-bottom-nav ol li a {
+      padding: 5px;
+      color: #fff;
+   }
+
+
+
+
+   
+
+
+
+   @media screen and (min-resolution: 200dpi),
+         screen and (min-resolution: 1.25dppx) {
+      #footer-hero {
+         background-image: url(../images/footer-mt@2x.jpg);
+      }		
+   }
+
+   #footer-hero h3 {
+      margin-top: 30px;
+      font-size: 28px;
+      margin-bottom: 16px;
+   }
+
+   #footer-privacy .line-seperator {
+      margin-top: 0px;
+   }
+
+   #footer-contact-info h3 {
+      font-size: 23px;
+   }
+
+   #footer-contact-info p {
+      margin-bottom: 20px;
+      line-height: 18px;
+      font-size: 11px;
+   }
+
+   #footer-nav, #footer-book-now {
+      display: none;
+   }
+
+
+@media screen and (min-width: 400px) {
+
+   .contact-renew-header h2{
+      justify-content: center;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 180;
+     }
+     .contact-renew-header p{
+      justify-content: center;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 180;
+     }
+   .contact-container {
+
+      justify-content: center;  
+      align-items: center;      
+      height: 54vh;  
+      margin-bottom:150px;
+  
+      padding: 15px;            
+      box-sizing: border-box;   
+  }
+  
+  .contact-section {
+     position: absolute;
+     z-index: 1;
+     top: 18%;
+     left: -74.2%;
+      display: flex;
+   padding: 25px 25px;
+     background-color: #FFD800;
+        
+     border-radius: 8px;       
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+     max-width: 480px;    
+     
+  }
+
+  .grid-container{
+   width: 300px;
+
+
+  }
+
+
+
+   
+   .product-renew-header h2{ font-size: 40px; font-weight: 220; margin-top: 20px;}
+   .product-renew-header p{ font-size: 30px; font-weight: 100; margin-bottom:0px;}
+   .season1-product{background-color: #FFD800;border-radius:16px;width:auto; padding-left: 50px;padding-right: 50px;}
+   .season1-product img{padding-left:20px;padding-top:10px;}
+   .season1-product h2{font-size:40px;padding: 0px 20px;font-weight: 100;text-align: center; margin-left:10px;background-color: white;border-radius: 11px;width: 100%;}
+   .purchasing{padding: 0px 0px 40px 0px;display: flex;flex-direction: row;justify-content: center;}
+   .purchasing p{font-size:40px;margin-left: 30px;}
+   .products-renew{margin-top:70px; gap:40px}
+
+   .season2-product{background-color: #FFD800;border-radius:16px;width:auto; padding-left: 50px;padding-right: 50px;}
+   .season2-product img{padding-left:20px;padding-top:10px;}
+   .season2-product h2{font-size:40px;padding: 0px 20px;font-weight: 100;text-align: center; margin-left:10px;background-color: white;border-radius: 11px;width: 100%;}
+   
+   .season3-product{background-color: #FFD800;border-radius:16px;width:auto; padding-left: 50px;padding-right: 50px;}
+   .season3-product img{padding-left:20px;padding-top:10px;}
+   .season3-product h2{font-size:40px;padding: 0px 20px;font-weight: 100;text-align: center; margin-left:10px;background-color: white;border-radius: 11px;width: 100%;}
+
+
+
+   #btn{padding: 1rem 2rem;font-size: 29px;font-weight: 100;font-family: 'Northead';text-transform: uppercase;background: transparent;color: black;border: 2px solid white;border-radius: 10px;cursor: pointer;transition: 0.5s;position: relative;overflow: hidden;z-index: 1;}
+    #btn::before{content: '';position: absolute;top: 0;left: 0;width: 0;height: 100%;background: black;z-index: -1;transition: 0.5s;color:white;}
+    #btn:hover::before{width: 100%;}
+    #btn:hover{color:#FFD800;}
+    #btn:nth-child(2)::before{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 0;background: #00abf0;transition: 0.5s;z-index: -1;
+   }
+
+   .btn-product-black{margin-top:20px; font-size:22px;font-family: 'Northead';border-radius: 7px;padding:11px 15px;background-color: black;color: #FFD800;border: none;transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, opacity 0.4s ease-in-out; }
+   .btn-product-black:hover{background-color: white; color:black}
+
+
+   .card-zoom:hover{
+      transform: scale(0.96); 
+      opacity: 1;
+   }
+        
+
+
+
+
+
+         .btn-renew-black{margin-top:20px; font-size:28px;font-family: 'Northead';border-radius: 12px;padding:19px 30px;background-color: black;color: #FFD800;border: none;transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, opacity 0.4s ease-in-out; }
+         .btn-renew-black:hover{background-color: #FFD800;color:black;}
+   
+         .btn-renew-yellow{margin-top:10px; margin-bottom:14px;font-size:28px;font-family: 'Northead';border-radius: 12px;padding:15px 30px;background-color: #FFD800;color: black;border: none;transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, opacity 0.4s ease-in-out; }
+         .btn-renew-yellow:hover{background-color: black;color:#FFD800;}
+   
+   
+ 
+   #logo{
+      z-index: 1;
+      position: absolute;
+      top:1%;
+      left: 86%;
+      width: 50px;
+   }
+   .footer-end {
+      text-align: center;
+      font-size: 32px;
+      font-family: 'Northead';
+      margin-bottom:40px;
+   }
+   
+   .main-container-footer{
+     margin-top:50px; 
+     background-color: #FFD800;
+     color:black;
+     border-top-left-radius: 16px;
+     border-top-right-radius: 16px;
+     
+  }
+   
+   .footer-billy-beer h2{
+      font-size: 35px;  
+      text-align: center;
+   }
+   
+   .social-media img{
+      height: 40px;
+      width:40px;
+   }
+   
+   .social-media {
+      text-align: center;
+      margin-top:35px;
+   }
+   
+   
+  
+/*testimonials*/
+.testimonials-renew img:nth-child(2){
+   width: 100%;
+ 
+    
+ }
+ 
+ .testimonials-renew .quote{
+    width:60px;
+    height: 60px;
+ }
+ .testimonial-card img:first-child{
+    text-align: center;
+    font-size: 100px;
+    height:50px;
+    width: 50px;
+    margin: 20px;
+ 
+    background-color: white;
+    
+ }
+ 
+ .testimonial-card{
+
+    border-radius: 16px;
+    padding:3px 0px 0px 0;
+    background-color: #FFD800;
+ }
+ 
+ .testimonials-renew h3{
+    padding: 15px 15px;
+    margin-top:15px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 300;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: black;
+    color:#FFD800;
+ }
+ 
+ .testimonials-renew p{
+    padding: 2px 15px;
+    font-size: 29px;
+    
+ }
+
+ .testimonial-card1, .testimonial-card2, .testimonial-card3, .testimonial-card4{
+  margin-bottom:40px;
+ }
+
+
+   
+ /*Below: about*/
+ 
+ .about button{
+   margin-top:30px;
+}
+.about{
+   margin-top:80px;
+   border-radius: 16px;
+   padding: 50px;
+   padding:0px 0px;
+}
+
+.about img{
+   margin: 0px 0px;
+   padding:0px;
+   border-radius: 16px;
+   height: 600px;
+   width: 100%;
+  
+}
+
+.about p:first-child{
+   border-radius: 16px;
+   padding-top: 25px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom:0px;
+   margin:0;
+
+   font-size: 50px;
+   font-weight: 80;
+ 
+}
+
+.about p:nth-child(2){
+   font-size: 30px;
+   padding-top: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom:0px;
+   font-weight: 100;
+}
+
+    
+ /*Below: LATEST Events*/
+ 
+ .main-card img{
+  
+   border-radius: 16px; 
+
+   height:240px;
+   width:100%;
+
+}
+
+
+
+
+.beer-card1 h2{
+  font-size: 39px;
+  font-weight: 100;
+}
+
+.beer-card1 p{
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.beer-card2 h2{
+  font-size: 39px;
+  font-weight: 100;
+}
+
+.beer-card2 p{
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+
+
+ 
+.beer-card-box1, .beer-card-box2{
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+   background-color: #F7F7F7;
+   border-radius: 15px;
+   padding: 10px 10px;
+   margin:20px 0px;
+   
+}
+
+.beer-card-box3, .beer-card-box4, .beer-card-box5{
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+   padding: 10px 10px;
+   background-color: #F7F7F7;
+   margin:20px 0px;
+   border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+      /*main new product feature*/
+ 
+ 
+    
+      .main-products-feature{
+    
+
+         padding-top:10px;
+   
+        
+         background-color: #FFD800;
+         border-bottom-left-radius: 16px;
+         border-bottom-right-radius: 16px;
+         margin-top: 80px;
+   
+   
+      }
+      .arrow-bg{
+         background-color: white;
+         height: 0px;
+         margin-top: 50px;
+         border-radius: 8px;
+         
+
+      }
+      #setter{
+         margin-bottom: 50px;
+      }
+
+    
+      .arrow-bg:hover{
+         transform: scale(0.94); 
+         transition: 0.3s ease-in-out;
+         opacity: 1;
+      }
+   
+      .main-product-1 img{
+         margin-top:20px;
+         transform: scale(1.5); 
+         width: 500px;          
+         height: auto;   
+         object-fit: cover;
+         width: 100%;
+      }
+   
+
+   
+      .main-product-1 {
+         padding:50px 30px;
+      }
+      .main-product-2{
+         background-color: white;
+         border-radius: 16px;
+         padding:50px 30px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   
+      }
+
+    /*image feature*/
+ .image-feature img{
+   object-fit: cover;
+  
+   width:100%;
+   padding:0px 0px;
+   border-bottom-left-radius: 16px;
+   border-bottom-right-radius: 16px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+   margin:0px;
+   
+   }
+   
+   .image-feature{
+      padding:0px 0px;
+  
+      
+   }
+   
+
+          /*video section*/
+ 
+          .video-product h4{font-size:30px;font-family: 'Northead'; font-weight: 110;}
+          .video-product h2{font-size:20px;font-family: 'Northead'; font-weight: 130;}
+          .video-product p{font-size:25px;font-family: 'Northead'; font-weight: 130;}
+    
+          .video-product{
+     
+             background-color: #f4f3f3;
+             height:380px;
+             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+             border-top-left-radius: 16px;
+             border-top-right-radius: 16px;
+             padding:98px 30px;
+           /**  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);**/
+          }
+    
+   
+
+   .shortdescriptiontext{
+      text-align: center;
+      font-size: 37px;
+      margin-top:50px;
+      margin-bottom:50px;
+   }
+
+
+           /*Universal Billy Beer Header Text*/ .beer-heading p{font-size: 20px; font-family: 'Northead'; margin-bottom:40px;}.beer-heading{ width: 100%; margin-top: 10px; justify-items: center;font-weight: 100;} .beer-heading h2{ line-height: 22px;margin-top: 70px;margin-bottom: 5px;text-align: center;padding:0px  50px;font-family: 'Northead';font-size: 30px;border-left: 20px solid black;  border-right: 20px solid black; line-height: 0.1; }
+      /*Universal Border*/.border-shaper{border-radius: 20px; border:3.5px solid black;}
+
+          /*freshly*/
+
+          .freshly-good-beer-feature{
+           gap:50px;
+          }
+ 
+          .freshly-good-beer-feature img{
+           
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            margin: 0px;
+            padding:0px;
+         }
+   
+         .freshly-good-beer-box1 p{
+            font-size: 35px;
+            text-align: center;
+            padding-top: 0px;
+            padding-bottom: 10px;
+            margin:4px 0px 0px 0px;
+         }
+   
+         .freshly-good-beer-box2 p{
+            font-size: 35px;
+            text-align: center;
+            padding-top: 0px;
+            padding-bottom: 10px;
+            margin:4px 0px 0px 0px;
+         }
+   
+         .freshly-good-beer-box3 p{
+            font-size: 35px;
+            text-align: center;
+            padding-top: 0px;
+            padding-bottom: 10px;
+            margin:4px 0px 0px 0px;
+         }
+
+      
+   
+   
+   .freshly-good-beer-box1, .freshly-good-beer-box2, .freshly-good-beer-box3{
+      background-color: #FFD800;
+  
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+   }
+   
+    
+   
+         
+         .freshly-good-beer-box2 h3,span, p{
+            margin-top: 20px;
+         }
+         
+          /*top hero*/
+        /*top hero*/
+ 
+        .top-hero-text {
+         padding:60px;
+         width: 570px;
+      }
+      
+      #top-hero{
+        
+         background-color: #FFD800;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         border-radius: 16px;
+
+         padding:0px 0px;
+     
+       
+      }
+      #top-hero button{
+         border: 2px solid black ;
+         padding:12px 12px;
+         width: 150px;
+         border-radius: 8px;
+         background-color: #FFD800;
+         margin-top:10px;
+      }
+      
+      #top-hero h5{
+         color:white;
+         background-color: black;
+         padding:10px 10px;
+         width: 140px;
+         font-size: 30px;
+      }
+      .top-hero-image{
+         padding: 10px;
+      
+      
+      }
+      .top-hero-image img{
+         width:100%;
+         height: 100%;
+         object-fit:cover;
+    
+      }
+      
+      .top-hero-text p{
+      font-size: 30px;
+      color:black;
+      width: 150px;
+      padding:20px 0px;
+      }
+}
+
+
+   /* 10. ---Tablet Sized Screens--- */
+
+ @media screen and (min-width: 768px) and (max-width: 1200px) {
+
+   .contact-container {
+
+      justify-content: center;  
+      align-items: center;      
+      height: 62vh;  
+      
+      padding: 15px;            
+      box-sizing: border-box;   
+  }
+  
+  .contact-section {
+     position: absolute;
+     z-index: 1;
+     top: 22%;
+     left: -18%;
+      display: flex;
+   padding: 25px 25px;
+     background-color: #FFD800;
+        
+     border-radius: 8px;       
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+     max-width: 490px;    
+  }
+
+  .grid-container{
+   width: 300px;
+
+  }
+
+
+    .contact-renew-header h2{
+     justify-content: center;
+     text-align: center;
+     font-size: 40px;
+     font-weight: 180;
+    }
+    .contact-renew-header p{
+     justify-content: center;
+     text-align: center;
+     font-size: 30px;
+     font-weight: 180;
+    }
+    
+    
+
+
+
+
+
+.contact-renew-header h2{
+justify-content: center;
+text-align: center;
+font-size: 40px;
+font-weight: 180;
+}
+.contact-renew-header p{
+justify-content: center;
+text-align: center;
+font-size: 30px;
+font-weight: 180;
+}
+
+
+
+
+
+
+   .product-renew-header{text-align: center;}     
+   .product-renew-header h2{ font-size: 60px; font-weight: 220;}
+   .product-renew-header p{ font-size: 40px; font-weight: 100;}
+
+
+
+
+
+
+
+   .footer-end {
+      text-align: center;
+      font-size: 32px;
+      font-family: 'Northead';
+      margin-bottom:40px;
+   }
+   
+   .main-container-footer{
+     margin-top:120px; 
+     background-color: #FFD800;
+     color:black;
+     border-top-left-radius: 16px;
+     border-top-right-radius: 16px;
+     
+  }
+   
+   .footer-billy-beer h2{
+      font-size: 35px;  
+      text-align: center;
+   }
+   
+   .social-media img{
+      height: 40px;
+      width:40px;
+   }
+   
+   .social-media {
+      text-align: center;
+      margin-top:35px;
+   }
+   
+   
+  
+/*testimonials*/
+
+
+.testimonials-renew img:nth-child(2){
+   width: 100%;
+ 
+    
+ }
+ 
+ .testimonials-renew .quote{
+    width:60px;
+    height: 60px;
+ }
+ .testimonial-card img:first-child{
+    text-align: center;
+    font-size: 100px;
+    height:50px;
+    width: 50px;
+    margin: 20px;
+ 
+    background-color: white;
+    
+ }
+ 
+ .testimonial-card{
+
+    border-radius: 16px;
+    padding:3px 0px 25px 0;
+    background-color: #FFD800;
+    gap:30px;
+ }
+ 
+ .testimonials-renew h3{
+    padding: 15px 15px;
+    margin-top:15px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 300;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color: black;
+    color:#FFD800;
+ }
+ 
+ .testimonials-renew p{
+    padding: 2px 15px;
+    font-size: 29px;
+
+ }
+
+
+
+ 
+ 
+ 
+ 
+    /*main new product feature*/
+ 
+ 
+    
+    .main-products-feature{
+       padding-top:70px;
+       padding-left:50px;
+       padding-right:50px;
+       padding-bottom: 90px;
+       background-color: #FFD800;
+       border-bottom-left-radius: 16px;
+       border-bottom-right-radius: 16px;
+       margin-top: 80px;
+ 
+ 
+    }
+    .arrow-bg{
+       background-color: black;
+       height: 50px;
+       margin-top: 220px;
+       border-radius: 8px;
+    }
+ 
+    .arrow-bg:hover{
+       transform: scale(0.94); 
+       transition: 0.3s ease-in-out;
+       opacity: 1;
+    }
+ 
+    .main-product-1 img{
+       margin-top:70px;
+       transform: scale(1.5); 
+       width: 100%;           
+       height: auto;   
+       object-fit: cover;
+       width: 100%;
+    }
+ 
+   
+ 
+    .main-product-1 {
+       padding:50px 30px;
+    }
+    .main-product-2{
+       background-color: white;
+       border-radius: 16px;
+       padding:50px 30px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ 
+    }
+    .main-product-2 h2{font-size:80px; font-family: 'Northead'; font-weight: 150;} 
+    .main-product-2 h3:first-of-type{font-size:80px; font-family: 'Northead'; font-weight: 150;background-color:#FFD800; width: 100%; border-radius: 8px; padding:0px 8px; margin-top:8px;}
+    .main-product-2 h3:nth-of-type(2){font-size:40px; font-family: 'Northead'; font-weight: 150;margin-top:15px;}
+    .main-product-2 h3:nth-of-type(2) span{border-radius: 100%; background-color: black; color:#FFD800; padding: 10px 5px;}
+    .main-product-2 p:first-of-type{font-size:50px; font-family: 'Northead'; font-weight: 150;}
+    .main-product-2 p:last-child{font-size:45px; font-family: 'Northead'; font-weight: 150; margin-top:25px;}
+    
+ 
+    .purchase-box{
+       display: flex;
+       flex-direction: row;
+    }
+ 
+ 
+ /*image feature*/
+ .image-feature img{
+ object-fit: cover;
+
+ width:100%;
+ padding:0px 0px;
+ border-bottom-left-radius: 16px;
+ border-bottom-right-radius: 16px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+ margin:0px;
+ 
+ }
+ 
+ .image-feature{
+    padding:0px 0px;
+
+    
+ }
+ 
+ 
+ 
+ 
+       /*video section*/
+ 
+       .video-product h4{font-size:35px;font-family: 'Northead'; font-weight: 110;}
+       .video-product h2{font-size:70px;font-family: 'Northead'; font-weight: 130;}
+       .video-product p{font-size:40px;font-family: 'Northead'; font-weight: 130;}
+ 
+       .video-product{
+  
+          background-color: #f4f3f3;
+          height:550px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+          padding:98px 30px;
+        /**  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);**/
+       }
+ 
+  
+       .shortdescriptiontext{
+         text-align: center;
+         font-size: 37px;
+         margin-top:60px;
+         margin-bottom:70px;
+      }
+
+ 
+       /*freshly*/
+ 
+       .freshly-good-beer-feature img{
+    
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+          margin: 0px;
+          padding:0px;
+       }
+ 
+       .freshly-good-beer-box1 p{
+          font-size: 35px;
+          text-align: center;
+          padding-top: 0px;
+          padding-bottom: 40px;
+          margin:4px 0px 0px 0px;
+       }
+ 
+       .freshly-good-beer-box2 p{
+          font-size: 35px;
+          text-align: center;
+          padding-top: 0px;
+          padding-bottom: 40px;
+          margin:4px 0px 0px 0px;
+       }
+ 
+       .freshly-good-beer-box3 p{
+          font-size: 35px;
+          text-align: center;
+          padding-top: 0px;
+          padding-bottom: 40px;
+          margin:4px 0px 0px 0px;
+       }
+ 
+ 
+ 
+ .freshly-good-beer-box1, .freshly-good-beer-box2, .freshly-good-beer-box3{
+    background-color: #FFD800;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+ }
+ 
+ 
+       /*top hero*/
+ 
+ .top-hero-text {
+    padding:60px;
+    width: 570px;
+ }
+ 
+ #top-hero{
+   
+    background-color: #FFD800;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    height:590px;
+    padding:60px 60px;
+  
+ }
+ #top-hero button{
+    border: 2px solid black ;
+    padding:12px 12px;
+    width: 150px;
+    border-radius: 8px;
+    background-color: #FFD800;
+    margin-top:40px;
+ }
+ 
+ #top-hero h5{
+    color:white;
+    background-color: black;
+    padding:10px 10px;
+    width: 140px;
+    font-size: 30px;
+ }
+ .top-hero-image{
+    padding: 10px;
+ 
+ 
+ }
+ .top-hero-image img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ 
+ .top-hero-text p{
+ font-size: 50px;
+ color:white;
+ width: 100%;
+ 
+ }
+ 
+ 
+ 
+ 
+       
+       .freshly-good-beer-box2 h3,span, p{
+          margin-top: 20px;
+       }
+       
+       
+ 
+       #sticky-nav-con {
+          position: sticky;
+          top: 0px;
+          background-color: white;
+    
+          z-index: 1;
+       }
+ 
+       #logo {
+         position: static; 
+         width: 70px; 
+          margin-top: 22px;
+          order: -1;
+       }
+ 
+       #button {
+          display: none;
+       }
+ 
+       #burger-con {
+          display: block;
+          font-size: 12px;
+       }
+ 
+       #burger-con ul li, #burger-con ul li:first-child {
+          border: none;
+          display: inline;
+       }
+ 
+       #main-nav ul li a {
+          display: inline;
+          font-size: 25px;
+       }
+ 
+       #burger-con ul li {
+          margin-right: 10px;
+       }
+ 
+       #burger-con ul li:last-child {
+          margin-right: 0px;
+       }
+ 
+       #main-nav {
+    
+          padding-left: 10px;
+          margin-top: 4%;
+          margin-bottom: 4%;
+       }
+ 
+   
+       
+    
+       
+       @media screen and (min-resolution: 200dpi),
+             screen and (min-resolution: 1.25dppx) {
+          #footer-hero {
+             background-image: url(../images/footer-td@2x.jpg);
+          }		  
+       }
+ 
+       #footer-nav {
+          margin-top: 40px;
+          column-count: 2;
+       }
+ 
+       #footer-nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+       }
+ 
+       #footer-nav ul li a {
+          color: #fff;
+       }
+ 
+       #footer-nav ul li {
+          margin-bottom: 20px;
+       }   
+ 
+
+    
+ 
+ /*footer*/
+ .footer-end {
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Northead';
+    margin-bottom:40px;
+ }
+ 
+ .main-container-footer{
+   margin-top:120px; 
+   background-color: #FFD800;
+   color:black;
+   border-top-left-radius: 16px;
+   border-top-right-radius: 16px;
+   
+}
+ 
+ .footer-billy-beer h2{
+    font-size: 35px;  
+    text-align: center;
+ }
+ 
+ .social-media img{
+    height: 40px;
+    width:40px;
+ }
+ 
+ .social-media {
+    text-align: center;
+    margin-top:35px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ /*testimonials below*/
+ .testimonials-renew img{
+    width: 300px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .beer-heading p{
+ margin-top: 40px;
+ }
+ 
+ /*Below: about*/
+ 
+ .about button{
+    margin-top:30px;
+ }
+ .about{
+    margin-top:80px;
+    border-radius: 16px;
+    padding: 50px;
+    padding:0px 0px;
+ }
+ 
+ .about img{
+    margin: 0px 0px;
+    padding:0px;
+    border-radius: 16px;
+    height: 600px;
+    width: 100%;
+   
+ }
+ 
+ .about p:first-child{
+    border-radius: 16px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom:0px;
+    margin:0;
+ 
+    font-size: 50px;
+    font-weight: 80;
+  
+ }
+ 
+ .about p:nth-child(2){
+    font-size: 30px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom:0px;
+    font-weight: 100;
+ }
+ 
+ /*Below: LATEST Events*/
+ 
+ .main-card img{
+    
+    border-radius: 16px; 
+ 
+ }
+ .beer-card1 h2{
+   font-size: 39px;
+   font-weight: 100;
+}
+
+.beer-card1 p{
+   font-size: 25px;
+   font-weight: 100;
+   margin-bottom: 20px;
+}
+
+.beer-card2 h2{
+   font-size: 39px;
+   font-weight: 100;
+}
+
+.beer-card2 p{
+   font-size: 25px;
+   font-weight: 100;
+   margin-bottom: 20px;
+}
+
+ 
+ 
+  
+ .beer-card-box1, .beer-card-box2{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    padding: 30px 30px;
+    margin:20px 0px;
+    
+ }
+ 
+ .beer-card-box3, .beer-card-box4, .beer-card-box5{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 19px 9px;
+    background-color: #F7F7F7;
+    margin:20px 0px;
+    border-radius: 15px;
+ }
+ .beer-card-box3 img{
+    height: 200px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .beer-header-type{
+ margin-top:30px;
+ }
+ 
+ 
+ .main-card img{
+    width:100%;
+    height:400px;
+ }
+ 
+ .beer-feature-container{
+    margin-top: 30px;
+    margin-bottom: 230px;
+    background-color: white;
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+      .card-zoom{
+       transition: transform 0.3s ease;
+      }
+      
+    #btn{padding: 1rem 2rem;font-size: 29px;font-weight: 100;font-family: 'Northead';text-transform: uppercase;background: transparent;color: black;border: 2px solid white;border-radius: 10px;cursor: pointer;transition: 0.5s;position: relative;overflow: hidden;z-index: 1;}
+    #btn::before{content: '';position: absolute;top: 0;left: 0;width: 0;height: 100%;background: black;z-index: -1;transition: 0.5s;color:white;}
+    #btn:hover::before{width: 100%;}
+    #btn:hover{color:#FFD800;}
+    #btn:nth-child(2)::before{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 0;background: #00abf0;transition: 0.5s;z-index: -1;
+   }
+   
+   #btn:nth-child(2):hover::before{
+       height: 100%;
+   }
+      
+ .card-zoom:hover{
+    transform: scale(0.96); 
+    opacity: 1;
+ }
+      
+       .btn-renew-black{font-size:28px;font-family: 'Northead';border-radius: 12px;padding:19px 30px;background-color: black;color: #FFD800;border: none;transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, opacity 0.4s ease-in-out; }
+       .btn-renew-black:hover{background-color: #FFD800;color:black;}
+ 
+       .btn-renew-yellow{font-size:28px;font-family: 'Northead';border-radius: 12px;padding:15px 30px;background-color: #FFD800;color: black;border: none;transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, opacity 0.4s ease-in-out; }
+       .btn-renew-yellow:hover{background-color: black;color:#FFD800;}
+ 
+ 
+    
+       /*Universal Billy Beer Header Text*/ .beer-heading p{font-size: 29px; font-family: 'Northead'; margin-bottom:40px;}.beer-heading{ width: 100%; margin-top: 10px; justify-items: center;font-weight: 150;} .beer-heading h2{ line-height: 22px;margin-top: 70px;margin-bottom: 5px;text-align: center;padding:0px  50px;font-family: 'Northead';font-size: 50px;border-left: 50px solid black;  border-right: 50px solid black; line-height: 0.1; }
+      /*Universal Border*/.border-shaper{border-radius: 20px; border:3.5px solid black;}
+ 
+       /*Below: Hero Section*/
+ 
+ 
+ 
+       /*history*/
+ 
+       .history-photograph{
+          margin-top: 50px;
+          
+       }
+ 
+       
+       .history-photograph img{
+          height: 450px;
+          width:100%;
+          
+       }
+ 
+ 
+       .history{
+          margin-top:30px;
+          margin-bottom:30px;
+          
+    
+       }
+       .history-text{
+          text-align: center;
+          line-height: 80px;
+       }
+ 
+       
+       /*Second Section*/
+ 
+       .Billy-Flavor-Separator{
+          text-align: center;
+          border-left: black solid 80px;
+          border-right: black solid 80px;
+          height: 3px;
+ 
+       }
+ 
+       #hero-beer-flavors{
+          height: 30px;
+          margin-top: 55px;
+          margin-bottom: 40px;
+    
+       }
+ 
+     
+ 
+ 
+ 
+       .alcohol-label{
+          display: block;
+          height: 200px;
+          width: 250px;
+          color: black;
+          margin-top: 50px;
+          padding: 290px 20px 10px 20px;
+       }
+ 
+ 
+ 
+    }
+ 
+
+   /* 11. ---Desktop Sized Screens--- */
+
+
+
+   @media screen and (min-width: 1200px) {
+
+
+
+   .contact-container {
+
+    justify-content: center;  
+    align-items: center;      
+    height: 54vh;            
+    padding: 20px;            
+    box-sizing: border-box;   
+}
+
+.contact-section {
+
+   position: absolute;
+   z-index: 1;
+   top: 22%;
+   left:10%;
+    display: flex;
+
+   background-color: #FFD800;
+   padding: 20px 20px;            
+   border-radius: 8px;       
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+   width: 100%;           
+   max-width: 600px;    
+}
+  .contact-renew-header h2{
+   justify-content: center;
+   text-align: center;
+   font-size: 40px;
+   font-weight: 180;
+  }
+  .contact-renew-header p{
+   justify-content: center;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 180;
+  }
+  
+  
+  
+  
+  
+  
+      .btn-product-black{margin-top:20px; font-size:22px;font-family: 'Northead';border-radius: 7px;padding:11px 15px;background-color: black;color: #FFD800;border: none;transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, opacity 0.4s ease-in-out; }
+   .btn-product-black:hover{background-color: white; color:black}
+
+  .product-renew-header{text-align: center;}     
+.product-renew-header h2{ font-size: 60px; font-weight: 220;}
+.product-renew-header p{ font-size: 40px; font-weight: 100;}
+
+      /*Product page*/
+
+      .season1-product{
+         background-color: #FFD800;
+         border-radius:16px;
+         width:auto; 
+         height: 530px;
+         padding-left: 50px;
+         padding-right: 50px;
+      }
+
+  
+      .season1-product img{padding-left:20px;padding-top:10px;}
+      .season1-product h2{
+      font-size:40px;
+      padding: 0px 20px;
+      font-weight: 100;
+      text-align: center;
+      margin-left:10px;
+      background-color: white;
+      border-radius: 11px;
+      width: 100%;
+     
+   }
+      .purchasing{
+         padding: 0px 20px;
+         display: flex;
+         flex-direction: row;
+      }
+
+      .purchasing p{
+         font-size:40px;
+         margin-left: 30px;
+      }
+
+      .products-renew{
+         margin-top:70px;
+      }
+
+      .season2-product{
+
+         background-color: #FFD800;
+         border-radius:16px;
+         width:auto; 
+         height: 530px;
+         padding-left: 50px;
+         padding-right: 50px;
+      }
+
+  
+      .season2-product img{padding-left:20px;padding-top:10px;}
+      .season2-product h2{
+      font-size:40px;
+      padding: 0px 20px;
+      font-weight: 100;
+      text-align: center;
+      margin-left:10px;
+      background-color: white;
+      border-radius: 11px;
+      width: 100%;
+     
+   }
+
+   .season3-product{
+
+      background-color: #FFD800;
+      border-radius:16px;
+      width:auto; 
+      height: 530px;
+      padding-left: 50px;
+      padding-right: 50px;
+   }
+
+
+   .season3-product img{padding-left:20px;padding-top:10px;}
+   .season3-product h2{
+   font-size:40px;
+   padding: 0px 20px;
+   font-weight: 100;
+   text-align: center;
+   margin-left:10px;
+   background-color: white;
+   border-radius: 11px;
+   width: 100%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*testimonials*/
+.testimonials-renew img:nth-child(2){
+  width: 100%;
+
+   
+}
+
+.testimonials-renew .quote{
+   width:60px;
+   height: 60px;
+}
+.testimonial-card img:first-child{
+   text-align: center;
+   font-size: 100px;
+   height:50px;
+   width: 50px;
+   margin: 20px;
+
+   background-color: white;
+   
+}
+
+.testimonial-card{
+   height:450px;
+   border-radius: 16px;
+   padding:3px 0px 25px 0;
+   background-color: #FFD800;
+}
+
+.testimonials-renew h3{
+   padding: 15px 15px;
+   margin-top:15px;
+   font-size: 30px;
+   text-align: left;
+   font-weight: 300;
+   border-bottom-left-radius: 16px;
+   border-bottom-right-radius: 16px;
+   background-color: black;
+   color:#FFD800;
+}
+
+.testimonials-renew p{
+   padding: 2px 15px;
+   font-size: 29px;
+   
+}
+
+
+
+
+   /*main new product feature*/
+
+
+   
+   .main-products-feature{
+      padding-top:70px;
+      padding-left:50px;
+      padding-right:50px;
+      padding-bottom: 90px;
+      background-color: #FFD800;
+      border-bottom-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      margin-top: 80px;
+
+
+   }
+   .arrow-bg{
+      background-color: black;
+      height: 50px;
+      margin-top: 220px;
+      border-radius: 8px;
+   }
+
+   .arrow-bg:hover{
+      transform: scale(0.94); 
+      transition: 0.3s ease-in-out;
+      opacity: 1;
+   }
+
+   .main-product-1 img{
+      margin-top:70px;
+      transform: scale(1.5); 
+      width: 100%;          
+      height: auto;   
+      object-fit: cover;
+      width: 100%;
+   }
+
+ 
+   .main-product-1 {
+      padding:50px 30px;
+   }
+   .main-product-2{
+      background-color: white;
+      border-radius: 16px;
+      padding:50px 30px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+   }
+   .main-product-2 h2{font-size:80px; font-family: 'Northead'; font-weight: 150;} 
+   .main-product-2 h3:first-of-type{font-size:50px; font-family: 'Northead'; font-weight: 150;background-color:#FFD800; width: 100%; border-radius: 8px; padding:0px 8px; margin-top:8px;}
+   .main-product-2 h3:nth-of-type(2){font-size:35px; font-family: 'Northead'; font-weight: 150;margin-top:15px;}
+   .main-product-2 h3:nth-of-type(2) span{border-radius: 100%; background-color: black; color:#FFD800; padding: 10px 5px;}
+   .main-product-2 p:first-of-type{font-size:41px; font-family: 'Northead'; font-weight: 150;}
+   .main-product-2 p:last-child{font-size:25px; font-family: 'Northead'; font-weight: 150; margin-top:25px;}
+   
+
+   .purchase-box{
+      display: flex;
+      flex-direction: row;
+   }
+
+
+/*image feature*/
+.image-feature img{
+object-fit: cover;
+height:68%;
+width:100%;
+padding:0px 0px;
+border-bottom-left-radius: 16px;
+border-bottom-right-radius: 16px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.image-feature{
+   padding:0px 0px;
+   height:530px;
+   
+}
+
+
+
+
+      /*video section*/
+
+      .video-product h4{font-size:35px;font-family: 'Northead'; font-weight: 110;}
+      .video-product h2{font-size:70px;font-family: 'Northead'; font-weight: 130;}
+      .video-product p{font-size:40px;font-family: 'Northead'; font-weight: 130;}
+
+      .video-product{
+ 
+         background-color: #f4f3f3;
+         height:550px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         border-top-left-radius: 16px;
+         border-top-right-radius: 16px;
+         padding:98px 30px;
+       /**  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);**/
+      }
+
+      .shortdescriptiontext{
+         text-align: center;
+         font-size: 37px;
+         margin-top:60px;
+         margin-bottom:70px;
+      }
+
+      /*freshly*/
+
+      .freshly-good-beer-feature img{
+   
+         border-top-left-radius: 16px;
+         border-top-right-radius: 16px;
+         margin: 0px;
+         padding:0px;
+      }
+
+      .freshly-good-beer-box1 p{
+         font-size: 35px;
+         text-align: center;
+         padding-top: 0px;
+         padding-bottom: 40px;
+         margin:4px 0px 0px 0px;
+      }
+
+      .freshly-good-beer-box2 p{
+         font-size: 35px;
+         text-align: center;
+         padding-top: 0px;
+         padding-bottom: 40px;
+         margin:4px 0px 0px 0px;
+      }
+
+      .freshly-good-beer-box3 p{
+         font-size: 35px;
+         text-align: center;
+         padding-top: 0px;
+         padding-bottom: 40px;
+         margin:4px 0px 0px 0px;
+      }
+
+
+
+.freshly-good-beer-box1, .freshly-good-beer-box2, .freshly-good-beer-box3{
+   background-color: #FFD800;
+   height:300px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border-top-left-radius: 16px;
+   border-top-right-radius: 16px;
+   border-bottom-left-radius: 16px;
+   border-bottom-right-radius: 16px;
+}
+
+
+      /*top hero*/
+
+.top-hero-text {
+   padding:60px;
+   width: 570px;
+}
+
+#top-hero{
+   background-color: #FFD800;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 16px;
+   height:590px;
+   padding:0px 60px;
+ 
+}
+#top-hero button{
+   border: 2px solid black ;
+   padding:12px 12px;
+   width: 150px;
+   border-radius: 8px;
+   background-color: #FFD800;
+}
+
+#top-hero h5{
+   color:white;
+   background-color: black;
+   padding:10px 10px;
+   width: 140px;
+   font-size: 30px;
+}
+.top-hero-image{
+   padding: 10px;
+
+
+}
+.top-hero-image img{
+   width:100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.top-hero-text p{
+font-size: 70px;
+color:white;
+width: 100%;
+
+}
+
+
+
+
+      
+      .freshly-good-beer-box2 h3,span, p{
+         margin-top: 20px;
+      }
+      
+      
+
+      #sticky-nav-con {
+         position: sticky;
+         top: 0px;
+         background-color: white;
+   
+         z-index: 1;
+      }
+
+      #logo {
+         position: static; 
+    width: auto; 
+         margin-top: 22px;
+         order: -1;
+      }
+
+      #button {
+         display: none;
+      }
+
+      #burger-con {
+         display: block;
+         font-size: 12px;
+      }
+
+      #burger-con ul li, #burger-con ul li:first-child {
+         border: none;
+         display: inline;
+      }
+
+      #main-nav ul li a {
+         display: inline;
+         font-size: 35px;
+      }
+
+      #burger-con ul li {
+         margin-right: 10px;
+      }
+
+      #burger-con ul li:last-child {
+         margin-right: 0px;
+      }
+
+      #main-nav {
+   
+         padding-left: 30px;
+         margin-top: 4%;
+         margin-bottom: 4%;
+      }
+
+  
+      
+   
+      
+      @media screen and (min-resolution: 200dpi),
+            screen and (min-resolution: 1.25dppx) {
+         #footer-hero {
+            background-image: url(../images/footer-td@2x.jpg);
+         }		  
+      }
+
+      #footer-nav {
+         margin-top: 40px;
+         column-count: 2;
+      }
+
+      #footer-nav ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+      }
+
+      #footer-nav ul li a {
+         color: #fff;
+      }
+
+      #footer-nav ul li {
+         margin-bottom: 20px;
+      }   
+
+
+
+      #book-now-header {
+         display:flex;
+         text-align: center;
+         padding: 0px 0px;
+         margin-left: 100px;
+
+      }
+   
+
+/*footer*/
+.footer-end {
+   text-align: center;
+   font-size: 32px;
+   font-family: 'Northead';
+   margin-bottom:40px;
+}
+
+.main-container-footer{
+   margin-top:120px; 
+   background-color: #FFD800;
+   color:black;
+   border-top-left-radius: 16px;
+   border-top-right-radius: 16px;
+   
+}
+
+.footer-billy-beer h2{
+   font-size: 35px;  
+   text-align: center;
+}
+
+.social-media img{
+   height: 40px;
+   width:40px;
+}
+
+.social-media {
+   text-align: center;
+   margin-top:35px;
+}
+
+
+
+
+
+
+/*testimonials below*/
+.testimonials-renew img{
+   width: 300px;
+}
+
+
+
+
+
+
+.beer-heading p{
+margin-top: 40px;
+}
+
+/*Below: about*/
+
+.about button{
+   margin-top:30px;
+}
+.about{
+   margin-top:80px;
+   border-radius: 16px;
+   padding: 50px;
+   padding:0px 0px;
+}
+
+.about img{
+   margin: 0px 0px;
+   padding:0px;
+   border-radius: 16px;
+   height: 600px;
+   width: 100%;
+  
+}
+
+.about p:first-child{
+   border-radius: 16px;
+   padding-top: 25px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom:0px;
+   margin:0;
+
+   font-size: 50px;
+   font-weight: 80;
+ 
+}
+
+.about p:nth-child(2){
+   font-size: 30px;
+   padding-top: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom:0px;
+   font-weight: 100;
+}
+
+/*Below: LATEST Events*/
+
+.main-card img{
+   
+   border-radius: 16px; 
+
+}
+
+
+ 
+.beer-card-box1, .beer-card-box2{
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+   background-color: #F7F7F7;
+   border-radius: 15px;
+   padding: 30px 30px;
+   margin:20px 0px;
+   
+}
+
+.beer-card-box3, .beer-card-box4, .beer-card-box5{
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+   padding: 19px 9px;
+   background-color: #F7F7F7;
+   margin:20px 0px;
+   border-radius: 15px;
+}
+.beer-card-box3 img{
+   height: 200px;
+}
+
+.beer-card1 h2{
+   font-size: 39px;
+   font-weight: 100;
+}
+
+.beer-card1 p{
+   font-size: 25px;
+   font-weight: 100;
+   margin-bottom: 20px;
+}
+
+.beer-card2 h2{
+   font-size: 39px;
+   font-weight: 100;
+}
+
+.beer-card2 p{
+   font-size: 25px;
+   font-weight: 100;
+   margin-bottom: 20px;
+}
+
+
+
+
+
+
+.beer-header-type{
+margin-top:30px;
+}
+
+.main-card{
+   margin-top:50px;
+}
+
+.main-card img{
+   width:100%;
+   height:400px;
+   
+}
+
+.beer-feature-container{
+   margin-top: 30px;
+   margin-bottom: 230px;
+   background-color: white;
+
+}
+
+
+
+
+
+
+
+
+     .card-zoom{
+      transition: transform 0.3s ease;
+     }
+     
+   #btn{padding: 1rem 2rem;font-size: 29px;font-weight: 100;font-family: 'Northead';text-transform: uppercase;background: transparent;color: black;border: 2px solid white;border-radius: 10px;cursor: pointer;transition: 0.5s;position: relative;overflow: hidden;z-index: 1;}
+   #btn::before{content: '';position: absolute;top: 0;left: 0;width: 0;height: 100%;background: black;z-index: -1;transition: 0.5s;color:white;}
+   #btn:hover::before{width: 100%;}
+   #btn:hover{color:#FFD800;}
+   #btn:nth-child(2)::before{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 0;background: #00abf0;transition: 0.5s;z-index: -1;
+  }
+  
+  #btn:nth-child(2):hover::before{
+      height: 100%;
+  }
+     
+.card-zoom:hover{
+   transform: scale(0.96); 
+   opacity: 1;
+}
+     
+      .btn-renew-black{font-size:28px;font-family: 'Northead';border-radius: 12px;padding:19px 30px;background-color: black;color: #FFD800;border: none;transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, opacity 0.4s ease-in-out; }
+      .btn-renew-black:hover{background-color: #FFD800;color:black;}
+
+      .btn-renew-yellow{font-size:28px;font-family: 'Northead';border-radius: 12px;padding:15px 30px;background-color: #FFD800;color: black;border: none;transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, opacity 0.4s ease-in-out; }
+      .btn-renew-yellow:hover{background-color: black;color:#FFD800;}
+
+
+   
+      /*Universal Billy Beer Header Text*/ .beer-heading p{font-size: 29px; font-family: 'Northead'; margin-bottom:40px;}.beer-heading{ width: 100%; margin-top: 10px; justify-items: center;font-weight: 150;} .beer-heading h2{ line-height: 22px;margin-top: 70px;margin-bottom: 5px;text-align: center;padding:0px  50px;font-family: 'Northead';font-size: 50px;border-left: 310px solid black;  border-right: 310px solid black; line-height: 0.1; }
+     /*Universal Border*/.border-shaper{border-radius: 20px; border:3.5px solid black;}
+
+      /*Below: Hero Section*/
+
+
+
+      /*history*/
+
+      .history-photograph{
+         margin-top: 50px;
+         
+      }
+
+      
+      .history-photograph img{
+         height: 450px;
+         width:100%;
+         
+      }
+
+
+      .history{
+         margin-top:30px;
+         margin-bottom:30px;
+         
+   
+      }
+      .history-text{
+         text-align: center;
+         line-height: 80px;
+      }
+
+      
+      /*Second Section*/
+
+      .Billy-Flavor-Separator{
+         text-align: center;
+         border-left: black solid 80px;
+         border-right: black solid 80px;
+         height: 3px;
+
+      }
+
+      #hero-beer-flavors{
+         height: 30px;
+         margin-top: 55px;
+         margin-bottom: 40px;
+   
+      }
+
+    
+
+
+
+      .alcohol-label{
+         display: block;
+         height: 200px;
+         width: 250px;
+         color: black;
+         margin-top: 50px;
+         padding: 290px 20px 10px 20px;
+      }
+
+
+
+   }
+
+   
+      /*mobile*/
+      #main-nav button {
+         width: 20px;
+         height: 20px;
+         background: url('../images/menu.png') no-repeat center;
+         background-size: contain; 
+         margin-top: 20px; 
+         transition: all 0.5s ease;
+         margin-bottom: 20px;
+         border: 0;
+     }
+
+     #main-nav button.expanded {
+      transform: rotate(90deg);
+   }
+   
+
+
+
